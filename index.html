@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <a href="#" class="logo"
+        ><img
+          src="/Images/LogoSample_ByTailorBrands-removebg-preview.png"
+          alt=""
+      /></a>
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="social-icons">
+          <img src="/Images/fb.png" alt="" />
+          <img src="/Images/gp.png" alt="" />
+          <img src="/Images/tw.png" alt="" />
+        </div>
+
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter User Id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span
+          >
+          <a href="/app.html"><button type="submit" class="submit-btn">Log In</button></a>
+          
+        </form>
+
+        <form id="register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter User Id"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Enter Email"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Agree To Terms & Conditions</span
+          >
+          <a href="/app.html"><button type="submit" class="submit-btn">Register</button></a>
+        </form>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+    </script>
+  </body>
+</html>
